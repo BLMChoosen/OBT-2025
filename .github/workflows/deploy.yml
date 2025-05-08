@@ -31,6 +31,9 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}  # Altere para usar seu novo token
+          deploy_key: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}  # Nome exato do segredo
           publish_dir: ./dist
-          enable_jekyll: false
+          keep_files: false  # Limpa o branch gh-pages antes do deploy
+          force_orphan: true  # Garante que só os novos arquivos permaneçam
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
