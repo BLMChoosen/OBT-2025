@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, Smartphone, MessageCircle, Banknote, Mic, Users2 } from 'lucide-react';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
 import ReactPlayer from 'react-player/youtube';
 
 const tutorials = [
@@ -165,7 +165,7 @@ const TutorialsPage = () => {
       >
         <img
           alt="Grupo de idosos sorrindo enquanto usam smartphones e tablets juntos em um ambiente iluminado e confortável"
-          src="https://images.unsplash.com/photo-1661250150188-242c8ab80bfc"
+          src={`${process.env.PUBLIC_URL}/assets/images/tutorials.jpg`}
           className="rounded-lg shadow-xl mx-auto w-full max-w-4xl"
         />
       </motion.div>

@@ -1,16 +1,16 @@
 
-    import React from 'react';
-    import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-    import HomePage from '@/pages/HomePage';
-    import TutorialsPage from '@/pages/TutorialsPage';
-    import AssistantPage from '@/pages/AssistantPage';
-    import GamesPage from '@/pages/GamesPage';
-    import SimulationsPage from '@/pages/SimulationsPage';
-    import FamilyPage from '@/pages/FamilyPage';
-    import Header from '@/components/Header';
-    import Footer from '@/components/Footer';
-    import { Toaster } from '@/components/ui/toaster';
-    import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import TutorialsPage from './pages/TutorialsPage';
+import AssistantPage from './pages/AssistantPage';
+import GamesPage from './pages/GamesPage';
+import SimulationsPage from './pages/SimulationsPage';
+import FamilyPage from './pages/FamilyPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { Toaster } from './components/ui/toaster';
+import { motion, AnimatePresence } from 'framer-motion';
 
     function App() {
       return (
