@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages  # Nome do workflow
+
+on:
+  push:
+    branches: [ "main" ]  # Executa apenas quando houver push no branch "main"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Usa uma máquina virtual com Ubuntu
+
+    steps:
+      # 1. Baixa o código do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Configura o Node.js (versão 20)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Instala as dependências (npm ci é mais rápido e seguro que npm install)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Gera a build da aplicação (arquivos na pasta /dist)
+      - name: Build project
+        run: npm run build
+
+      # 5. Faz o deploy no GitHub Pages usando a ação "gh-pages"
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Token de autenticação automático
+          publish_dir: ./dist  # Pasta onde está a build pronta
+          enable_jekyll: false  # Desativa o Jekyll (importante para SPAs)
