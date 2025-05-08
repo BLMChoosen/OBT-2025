@@ -2,7 +2,7 @@
     import React from 'react';
     import { Link } from 'react-router-dom';
     import { motion } from 'framer-motion';
-    import { Button } from '../../components/ui/button'
+    import { Button } from '../components/ui/button'
     import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
     import { BookOpen, MessageSquare as MessageSquareHeart, Puzzle, MousePointerSquare, Users, ShieldCheck, Smartphone, Smile } from 'lucide-react';
 
