@@ -2,7 +2,7 @@
     import React from 'react';
     import { Link } from 'react-router-dom';
     import { motion } from 'framer-motion';
-    import { Button } from '@/components/ui/button';
+    import { Button } from '../../components/ui/button'
     import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
     import { BookOpen, MessageSquare as MessageSquareHeart, Puzzle, MousePointerSquare, Users, ShieldCheck, Smartphone, Smile } from 'lucide-react';
 
@@ -88,7 +88,7 @@
                     <CardDescription className="text-base text-foreground/80">{feature.description}</CardDescription>
                   </CardContent>
                   <div className="p-6 pt-0 mt-auto">
-                    <Link to={feature.link} className="w-full">
+                    < to={feature.link} className="w-full">
                       <Button variant="default" size="lg" className="w-full bg-primary hover:bg-primary/90 text-lg py-3">
                         Começar Agora <Smile size={20} className="ml-2" />
                       </Button>
