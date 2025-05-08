@@ -21,7 +21,7 @@ jobs:
 
       # 3. Instala as dependências (npm ci é mais rápido e seguro que npm install)
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps  # Adicione esta flag
 
       # 4. Gera a build da aplicação (arquivos na pasta /dist)
       - name: Build project
