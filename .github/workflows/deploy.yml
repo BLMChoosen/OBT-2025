@@ -28,9 +28,9 @@ jobs:
         run: npm run build
 
       # 5. Faz o deploy no GitHub Pages usando a ação "gh-pages"
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          publish_dir: ./dist  # Pasta onde está a build pronta
-          enable_jekyll: false  # Desativa o Jekyll (importante para SPAs)
+          github_token: ${{ secrets.DEPLOY_TOKEN }}  # Altere para usar seu novo token
+          publish_dir: ./dist
+          enable_jekyll: false
