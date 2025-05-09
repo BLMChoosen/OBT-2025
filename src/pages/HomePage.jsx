@@ -12,7 +12,7 @@
         description: 'Aprenda passo a passo a usar o celular, WhatsApp, bancos e mais.',
         icon: <BookOpen size={48} className="text-primary mb-4" />,
         link: '/tutoriais',
-        bgColor: 'bg-blue-50',
+        bgColor: 'hsl(225 17.8% 23.5%)',
         borderColor: 'border-blue-500'
       },
       {
@@ -20,7 +20,7 @@
         description: 'Tire suas dúvidas sobre tecnologia com nosso assistente amigável.',
         icon: <MessageSquareHeart size={48} className="text-green-500 mb-4" />,
         link: '/assistente',
-        bgColor: 'bg-green-50',
+        bgColor: 'hsl(225 17.8% 23.5%)',
         borderColor: 'border-green-500'
       },
       {
@@ -28,7 +28,7 @@
         description: 'Divirta-se aprendendo sobre segurança digital e como evitar golpes.',
         icon: <Puzzle size={48} className="text-yellow-500 mb-4" />,
         link: '/jogos',
-        bgColor: 'bg-yellow-50',
+        bgColor: 'hsl(225 17.8% 23.5%)',
         borderColor: 'border-yellow-500'
       },
       {
@@ -36,7 +36,7 @@
         description: 'Pratique pagamentos e chamadas de vídeo em um ambiente seguro.',
         icon: <MousePointerSquare size={48} className="text-purple-500 mb-4" />,
         link: '/simulacoes',
-        bgColor: 'bg-purple-50',
+        bgColor: 'hsl(225 17.8% 23.5%)',
         borderColor: 'border-purple-500'
       },
       {
@@ -44,7 +44,7 @@
         description: 'Entre em contato rápido com seus familiares para pedir ajuda.',
         icon: <Users size={48} className="text-red-500 mb-4" />,
         link: '/familia',
-        bgColor: 'bg-red-50',
+        bgColor: 'hsl(225 17.8% 23.5%)',
         borderColor: 'border-red-500'
       },
     ];
