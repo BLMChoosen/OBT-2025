@@ -183,7 +183,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	base: '', // Nome exato do repositório
+	base: '/OBT-2025/', // Nome exato do repositório
 	customLogger: logger,
 	plugins: [
 	  react(),
